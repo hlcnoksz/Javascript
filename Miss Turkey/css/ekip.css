@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box; /*Bunu sonra yine araştır */
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    margin:0;
+    background: url("../img/arkaplanekip.jpg");
+    background-size: cover;
+}
+
+#container{
+    width:1200px;
+    height:auto;
+    margin:auto;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+    padding: 50px;
+}
+
+h3{
+    font-size:55px;
+    color: rgb(0, 0, 105);
+    font-weight: 600;
+    text-shadow:0 1px 1px black;
+    /* Yazıya gölge verdiğini biliyorsun sıralaması yatay - dikey 
+    - dağılması - renk olarak 4 parça gösteriliyor. */
+}
+
+#ekip{
+    height: 962px;
+    padding: 50px;
+    text-align: center;
+}
+
+#ekiph3{
+    color: white;
+}
+
+.sutun-sol-sag{
+    width: 400px;
+    height: 700px;
+    float: left;
+    padding: 50px;
+    margin-left: 160px;
+}
+
+.oval{
+    border-radius:50%;
+}
+
+#ekipisim{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.ekipp{
+    color: #888;
+    font-size: 18px;
+}
+
+.social{
+    color:white;
+    border:1px solid white;
+    padding:10px;
+    width:50px;
+    border-radius:5px;
+    margin:5px 10px;
+}
+
+.social:hover{
+    background-color: #888;
+}
+.seviloksuz{
+    width: 400px;
+    height: 700px;
+    float: left;
+    margin-left: 160px;
+
+}

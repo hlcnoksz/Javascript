@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box; /*Bunu sonra yine araştır */
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    margin:0;
+}
+
+#menu{
+    height:80px;
+    padding: 0 20px 0 0 ;
+}
+
+#logo{
+    height: 80px;
+    width: 100px; /* burda width değeri vermem neden şart 
+    çünkü aşağıda vermedim ? */
+    margin-left:10px;
+    background-image:url("../img/logo.jpg");
+    background-size:cover;
+    background-position:center;
+    float:left;
+}
+
+nav{
+    float:right;
+    line-height:80px;
+}
+
+nav a:link{
+    margin: 10px;
+    text-decoration:none;
+    margin-right:25px;
+    color:rgb(255, 77, 0); /* burda ki color ı anlamadım */
+}
+
+nav a:hover{
+    border-bottom:3px solid rgb(0, 217, 255)
+}
+
+nav a:visited{
+    text-decoration:none;
+    margin-right:25px;
+    color:rgb(13, 5, 105); 
+}
+
+/* nav a:active durumunu yapmaya gerek yok ne işe yara
+dığını biliyorsun zaten*/
+
+.ikon{
+    margin-right:10px;
+    font-size:20px;
+}
+
+#anasayfa{
+    margin: 20px 0 0 0;
+    height: 600px;
+    background-image:url("../img/Dana\ Kareglazaya.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+#perde{
+    height: 600px;
+    background-color:black;
+    opacity: 0.5;
+}
+
+#icerik{
+    position: absolute;
+    top:50%;
+    left:40%;
+    transform: translate(-50%,-130%);
+    /* Transformun amacı içeriğe geldikten sonra tekrardan içerik içinde
+    konumlandırma yapıyoruz, top la uğraşmak yerine bilakis son dokunuş
+    olarak denilenebilir. */
+    color:white;
+    font-size:20px;
+}
+
+#hakkimizda{
+    background-color:rgb(250, 248, 245);
+    height: auto;
+    padding:50px;
+    text-align:center;
+    text-transform:capitalize;
+    /* Bu özellik sayesinde yazılarımızın her harfi büyük harfle baş
+    layacak. */
+    font-weight:700;
+}
+#hakkimizda-h3{
+    font-size:55px;
+    color: rgb(0, 0, 105);
+    font-weight: 600;
+    text-shadow:0 1px 1px black;
+    /* Yazıya gölge verdiğini biliyorsun sıralaması yatay - dikey 
+    - dağılması - renk olarak 4 parça gösteriliyor. */
+}
+
+#container{
+    width:1200px;
+    height:auto;
+    margin:auto;
+}
+
+#sol{
+    float:left;
+    border-right:3px solid rgb(2, 2, 48);
+    font-size:30px;
+    width:600px;
+    color: #445c6e;
+}
+
+#h5sol{
+    line-height:1.6;
+    font-size:22px;
+    font-weight: 600;
+}
+
+#h5sol, #sag{
+    margin:0;
+    padding:0;
+    margin-top:20px;
+}
+
+span{
+    font-size:50px;
+    float:left;
+    margin-right: 7px;
+    line-height: 42px;
+    color: rgb(0, 0, 105);
+    font-weight:600;
+}
+
+#sag{
+    float:right;
+    padding-left:50px;
+    width:600px;
+    color:rgb(106, 105, 105);
+    text-align:left;
+    letter-spacing:1px; /* Harf aralığını açmak için */
+    font-size:15px;
+    line-height:1.8;
+    font-weight: 100;
+}
+
+#baslangicimg{
+    max-width: 100%; /* Fotoğraf yanlara taşma
+    gibi olayı yapmıyor hayal et pikseli tam uygun şekil
+    de oluyor. */
+    height: auto;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: 975px;
+    padding: 50px;
+    float: left;
+}
+
+.mt100{
+    margin-top:100px;
+}
+
+#baslangic_p{
+    color: #999;
+    margin-top:30px;
+    letter-spacing:1px;
+    font-size:15px;
+    line-height:1.8;
+    font-weight: 100;
+}
+
+#modeller{
+    background-color:rgb(250, 248, 245);
+    margin: auto;
+    height:auto;
+}
+
+h5{
+    float: right;
+    line-height:1.6;
+    font-size:22px;
+    font-weight: 600;
+    color:#445c6e;
+    margin-top: 400px;
+    padding: 50px;
+    width:517px;
+}
