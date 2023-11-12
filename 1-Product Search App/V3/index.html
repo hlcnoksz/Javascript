@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/h66-logo.png" id="logo">
+        <label id="aramakIstediginUrunLabel" for="bulInput">Aramak istediğiniz ürün : </label> <!-- for dan dolayı labela tıklayınca inputa tıklamış oluyor-->
+        <input type="text" id="bulInput">
+        <i id="aramaButton" class="fa-solid fa-magnifying-glass fa-beat" style="font-size: 25px; color: rgba(216, 73, 29, 0.927);"></i>
+        
+        <div id="header-buttons">
+            <i class="fa-regular fa-user fa-spin fa-spin-reverse" style="font-size: 25px; margin-left: 50px;"></i>
+            <button id="hesabımButton">Hesabım</button>
+    
+            <i class="fa-regular fa-heart fa-spin fa-spin-reverse" style="font-size:25px; margin-left: 10px;"></i>
+            <button id="favorilerimButton">Favorilerim</button>
+    
+            <i class="fa-solid fa-basket-shopping fa-spin fa-spin-reverse" style="font-size: 25px; margin-left: 10px;"></i>
+            <button id="sepetButton">Sepetim</button>
+
+            <div id="sepetPopup" class="popup">
+                <h3>Sepetim</h3>
+                <hr>
+            </div>
+        </div>
+        
+    </header>
+
+    <div class="urunler-container"></div>
+
+    <script src="app.js"></script>
+    <script src="filtered.js"></script>
+    <script src="buttons.js"></script>
+</body>
+
+</html>

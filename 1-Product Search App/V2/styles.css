@@ -1,0 +1,72 @@
+/* Body arkaplan html de ön mesela şöyle düşün sayfanın kenarları boş yazılar ortada gibi  */
+/*calc css in hesaplama fonksiyonu sonuç = 94 çıktı */
+/*Başta margin ve padding 0 sebebide bazı tarayıcılar otomatik margin ve padding atıyorlarmış o yüzden  */
+html, body {
+    height: calc(100% - 6%);
+    margin: 0;                  
+    padding: 0;
+}
+
+.urunler-container {
+    display: flex;      /*İçerdiği öğeler yatay sıralancak ve boşluklar arasında eşit paylaşım yapacaklar. */
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Öğeleri yatayda eşit aralıklarla gruplar boşluk bırakmadan */
+    height:auto; 
+    margin-top: 2%;
+    border-radius: 20px;
+}
+
+.urun-container {
+    border: 1px solid #ccc; 
+    width: 25%;
+    margin-bottom: 2%;  /* men buraya margin left eklemek istiyem ama yapamiyem son nokta. sonra can ahmet inkini yap */
+    padding: 20px; 
+    box-sizing: border-box; /*varsayılan content-box'tur. İçerik kenarlık ve dolgusu artarsa öğenin boyutu artıyor, taşabilirde . border ı anladın. */ 
+}
+
+.arama-container {
+    height: 5%;
+    margin-top: 2%;
+    display: flex; /*Yatayda hizaladıktan sonra align-items kullanılır yoksa çalışmaz */
+    align-items: center; /* Yatayda hizalandıktan sonra dikeyde elementleri ortaya hizalıyor, sil anlarsın */
+}
+
+#bulInput {
+    width: 25%;
+    margin-right: 10px;
+    border-radius: 20px; /* Yuvarlak köşeler */
+    height: 30px; 
+    padding: 8px 20px; /*Burda sıra normalde yukarı sağ aşağı sol , 2 tane verdiğinde yukarı ve aşağı 8 sol ve sağ 20 oldu */
+    font-size: 16px; 
+    border: 2px solid #ccc; /*Solid düz ve kesintisiz bir çizgi modeli */
+    outline: none; /* Varsayılan odaklanma rengini kaldırıyor */
+    transition: border-color 0.3s ease; /* transition : yumuşatıyor özellikleri . Mesela burda border renk yumuşatıldı. ease zamanlamayı belirtiyor, 0.3 saniye yumuşatıyor */
+}
+
+#bulInput:focus {
+    border-color: #e781eb;  /*Tıkladığımızda rengini alıyor */
+}
+#bulInput:hover {
+    border-color: aqua; /*Üzerine geldiğimizde yanıyor. */
+}
+
+#aramakIstediginUrunLabel {
+    font-size: 20px;
+    width: 16%;
+    margin-left: 3%;
+}
+
+#bulButton {
+   width:10% ;
+   height: 30px;
+   border-radius: 20px;
+   outline: none;
+   transition: border-color 0.3s ease;
+}
+
+#bulButton:focus {
+    border-color: aqua;
+}
+#bulButton:hover {
+    border-color: #e781eb;
+}

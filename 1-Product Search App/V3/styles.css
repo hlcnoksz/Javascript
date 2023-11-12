@@ -1,0 +1,141 @@
+/* Genel stil ayarları */
+html, body {
+    height: calc(100% - 6%);
+    margin: 0;
+    padding: 0;
+}
+
+/* Ürünler konteyneri */
+.urunler-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: auto;
+    margin-top: 2%;
+    border-radius: 20px;
+}
+
+/* Tek bir ürünün konteyneri */
+.urun-container {
+    border: 1px solid #ccc;
+    width: 25%;
+    margin-bottom: 2%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+/* Başlık ve butonlar bölümü */
+header {
+    height: 5%;
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#logo {
+    width: 15%;
+    height: auto;
+}
+
+#hesabımButton, #favorilerimButton, #sepetButton {
+    margin-left: 10px;
+    width: 80px;
+    padding: 6px;
+    background-color: #bd3d1d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#hesabımButton:hover,
+#favorilerimButton:hover,
+#sepetButton:hover {
+    background-color: #2980b9;
+}
+
+#header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+/* Ürün butonları */
+.urun-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.sepeteEkleButton {
+    margin-right: 10px;
+    height: 30px;
+    color: #f27a1a;
+    border: 2px solid #f27a1a;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.sepeteEkleButton:hover {
+    border-color: aqua;
+}
+
+.galpcikler {
+    font-size: 20px;
+    color: #828b81;
+    cursor: pointer;
+}
+
+/* Popup Stilleri */
+.popup {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 78%;
+    width: 150px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(230, 113, 113);
+    border-radius: 20px;
+    z-index: 1; /*Boostrap iconunun üstte kalmasını önlüyor */
+}
+
+/* Arama bölümü */
+#aramakIstediginUrunLabel {
+    font-size: 20px;
+    width: 16%;
+    margin-left: 3%;
+}
+
+#bulInput {
+    width: 25%;
+    margin-right: 10px;
+    border-radius: 20px;
+    height: 30px;
+    padding: 8px 20px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#bulInput:focus,
+#bulInput:hover {
+    border-color: #e781eb;
+}
+
+#bulButton {
+   width: 10%;
+   height: 30px;
+   border-radius: 20px;
+   outline: none;
+   transition: border-color 0.3s ease;
+}
+
+#bulButton:focus,
+#bulButton:hover {
+    border-color: aqua;
+}
